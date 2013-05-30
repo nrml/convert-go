@@ -19,7 +19,7 @@ func Convert(src interface{}, dstptr interface{}) error {
 
 	return nil
 }
-func ConvertMap(src map[interface{}]interface{}, dstrptr interface{}) error {
+func ConvertMap(src map[string]interface{}, dstrptr interface{}) error {
 	l := len(src)
 	dval := reflect.ValueOf(dstrptr)
 	dtype := dval.Elem().Type()

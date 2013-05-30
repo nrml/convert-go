@@ -28,7 +28,7 @@ func Test_Convert(t *testing.T) {
 }
 
 func Test_ConvertMap(t *testing.T) {
-	mp := make(map[interface{}]interface{})
+	mp := make(map[string]interface{})
 	mp["I"] = 5
 	mp["S"] = "m1"
 	mp["B"] = true
